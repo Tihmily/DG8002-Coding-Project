@@ -163,3 +163,57 @@ p.copy{
 	text-align:left;
 	font-style:normal;
 }
+.lyrics_wrapper{
+	margin-top:25px;
+	border:2px solid #0066CC;
+	padding:1em;
+	width:50%;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+}
+.lyrics{
+	width:45%;
+	float:left;
+}
+.lyrics p{
+	font-size:0.5em;
+	color:#333;
+}
+.right_block{
+	width:45%;
+	float:right;
+}
+.scrolling{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.scrolling p{
+	font-size:0.5em;
+	color:#333;
+	margin-top:5px;
+}
+.scrolling h1{
+	color:#f47321;
+	font-size:0.7em;
+	margin-bottom:5px;
+}
+.scrolling h2{
+	color:#0066CC;
+	font-size:0.6em;
+	margin-bottom:5px;
+}
+.scrolling a{
+	text-decoration:none;
+	color:#0066CC;
+	font-size:0.6em;
+	margin-top:-20px;
+}
+.scrolling a:hover{
+	color:#f47321;
+}
+.margin_left{
+	margin-left:5px;
+}

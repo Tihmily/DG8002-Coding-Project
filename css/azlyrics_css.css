@@ -56,10 +56,23 @@ body{
 	font-size:2em;
 	padding-bottom:20px;
 }
-.banner{
-	width:100%;
+.main a{
+	color:#0066CC;
 }
-.banner img{
+.main a:hover{
+	color:#0025CC;
+}
+.main a.active{
+	color:#f47321;
+	font-weight:bold;
+	font-size:0.8em;
+}
+.lyrics_banner{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.lyrics_banner img{
 	width:100%;
 }
 .mainbody_container{
@@ -90,10 +103,6 @@ input[type=text] {
     border:2px solid #0066CC;
     border-radius: 4px;
     color:#0066CC;
-    background-image: url('http://www.freeiconspng.com/uploads/search-icon-png-2.png');
-    background-size: 30px 22.25px;
-    background-repeat: no-repeat;
-    background-position: 10px 10px; 
     font-size:0.6em;
 }
 .footer{

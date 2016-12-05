@@ -56,10 +56,23 @@ body{
 	font-size:2em;
 	padding-bottom:20px;
 }
-.banner{
-	width:100%;
+.main a{
+	color:#0066CC;
 }
-.banner img{
+.main a:hover{
+	color:#0025CC;
+}
+.main a.active{
+	color:#f47321;
+	font-weight:bold;
+	font-size:0.8em;
+}
+.lyrics_banner{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.lyrics_banner img{
 	width:100%;
 }
 .mainbody_container{
@@ -90,10 +103,6 @@ input[type=text] {
     border:2px solid #0066CC;
     border-radius: 4px;
     color:#0066CC;
-    background-image: url('http://www.freeiconspng.com/uploads/search-icon-png-2.png');
-    background-size: 30px 22.25px;
-    background-repeat: no-repeat;
-    background-position: 10px 10px; 
     font-size:0.6em;
 }
 .footer{
@@ -153,4 +162,58 @@ p.copy{
 	font-size:0.5em;
 	text-align:left;
 	font-style:normal;
+}
+.lyrics_wrapper{
+	margin-top:25px;
+	border:2px solid #0066CC;
+	padding:1em;
+	width:50%;
+	background-color:#FFF;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+}
+.lyrics{
+	width:45%;
+	float:left;
+}
+.lyrics p{
+	font-size:0.5em;
+	color:#333;
+}
+.right_block{
+	width:45%;
+	float:right;
+}
+.scrolling{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.scrolling p{
+	font-size:0.5em;
+	color:#333;
+	margin-top:5px;
+}
+.scrolling h1{
+	color:#f47321;
+	font-size:0.7em;
+	margin-bottom:5px;
+}
+.scrolling h2{
+	color:#0066CC;
+	font-size:0.6em;
+	margin-bottom:5px;
+}
+.scrolling a{
+	text-decoration:none;
+	color:#0066CC;
+	font-size:0.6em;
+	margin-top:-20px;
+}
+.scrolling a:hover{
+	color:#f47321;
+}
+.margin_left{
+	margin-left:5px;
 }

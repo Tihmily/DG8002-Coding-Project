@@ -76,12 +76,17 @@ input{
 }
 input[type=text] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 20px 12px 40px;
     margin: 8px 0;
     box-sizing: border-box;
-	border:2px solid #0066CC;
-	color:#0066CC;
-	font-size:0.6em;
+    border:2px solid #0066CC;
+    border-radius: 4px;
+    color:#0066CC;
+    background-image: url('http://www.freeiconspng.com/uploads/search-icon-png-2.png');
+    background-size: 30px 22.25px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px; 
+    font-size:0.6em;
 }
 .footer{
 	width:100%;
@@ -113,4 +118,30 @@ input[type=text] {
 }
 .footer_float_right img{
 	margin-left:15%;
+}
+p.orange_header{
+	color:#f47321;
+	font-weight:bold;
+	font-size:0.8em;
+	text-align:left;	
+}
+p.from_album{
+	color:#666;
+	font-family:Roboto, Arial, sans-serif;
+	font-size:0.5em;
+	text-align:left;	
+}
+p.other_result{
+	color:#0066CC;
+	font-family:Roboto, Arial, sans-serif;
+	font-size:0.5em;
+	text-align:left;
+	font-weight:lighter;
+}
+p.copy{
+	color:#000000;
+	font-family:Roboto, Arial, sans-serif;
+	font-size:0.5em;
+	text-align:left;
+	font-style:normal;
 }

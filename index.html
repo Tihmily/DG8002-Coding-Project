@@ -24,11 +24,48 @@
             	<th>
                 	What are you looking for?
                         <form>
-                    	<input type="text" name="searchinquiry" placeholder="Search Lyrics, Songs, Artists, and Albums...">
+                    	<input type="text" id="searchinquiry" placeholder="Search Lyrics, Songs, Artists, and Albums...">
+			<button id="calc" type="button" onClick="findMusic()">Find It!</button>
                     	</form>
                 </th>
             </table>
-        </div><!--Search Bar-->
+	    <p id="error" style="color:red; text-align:center; font-size:0.8em;"></p>
+        <script type="text/javascript">
+	
+	function findMusic()
+		{
+    	// For checking the query	
+ 		var query = document.getElementById("searchinquiry").value;
+    	// To make the input case-sensitive   
+    	var regex = 'i';<!--Remove this line to make js work-->
+    	// For query responses that involve text (not working)	
+		var text;
+    	// For checking the length of the query
+		var textbox = document.getElementById("searchinquiry");
+
+    	// If the query is "Crazy in Love":
+    	if <!--(regex.test-->
+		(query === "Crazy in Love")<!--)--> 
+			{
+			window.location.href="lyrics.html";
+    	// If the user enters nothing:
+    	} else if (query === "") {
+        	text = "Please type a lyric or a name of a song, artist, or album!";
+   		// If the user enters three or fewer characters:
+		} else if (textbox.value.length <= 3){
+        	text = "Please type a little more!"
+       	// If the query is close to "Crazy in Love":
+		} else if (query === "Craxy in Love" || query === "Crazy in Lobe" || query === "Craxy in Lobe" || query === "Crazzy in Love" || query === "Crazy in Luve" || query === "Crazi in Love" || query === "Krazy in Love" || query === "Crazy in Lov" || query === "CrazyinLove" || query === "Crazy in ,ove" || query === "Craxi in Love") {
+			window.location.href="topresults.html";
+		// If the query is anything else (i.e., an unidentifiable lyric):
+    	} else {
+			window.location.href="error.html";
+    	}
+
+		document.getElementById("error").innerHTML = text;
+	}
+	</script>
+	</div><!--Search Bar-->
     </div><!--Main Body Content-->
 	<div class="footer">
     	<div class="footer_float_left">

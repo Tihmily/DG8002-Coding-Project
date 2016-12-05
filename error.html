@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/css/azlyrics_css.css">
+<title>AZ Lyrics</title>
+
+</head>
+
+<body>
+      	
+       	<div id="main_wrapper">
+        <div class="menu">
+            <img src="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/img/logo_orange-03.png" width="75px"/>
+            <ul>
+                <li><a href="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/index.html">Search</a><li>
+                <li><a href="#">Popular Hits</a></li>
+                <li><a href="#">Submit Lyrics</a></li>
+            </ul>
+        </div><!--Nav or Menu Bar-->
+        <div class="main Error">
+           <div id="alert_message">Uh Oh Uh Oh Uh Oh <br>404 Page Not Found</div>
+            <div class="lyrics_banner">
+                
+                <img src="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/img/adeda9c527ba214d2079d96c48a56d39.gif" style="width:100%">
+              
+            </div><!--Banner container-->
+            <div class="mainbody_container">
+<!--Lyrics Wrapper-->
+            </div><!--mainbody container-->
+        </div><!--Content-->
+        <div class="footer">
+            <div class="footer_float_left">
+                <img src="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/img/logo_white-05.png" width="70px"/><p>&#169; 2016</p>
+            </div><!--Footer Logo Container-->
+            <div class="footer_float_right">
+                <img src="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/img/twitter_white.png" width="39px"/><img src="file:///Macintosh HD/Users/mdm/Downloads/DG8002-Coding-Project-master/img/instagram_white.png" width="35px"/>
+            </div><!--Social Media Icons Footer container-->
+        </div><!--Footer-->
+    </div>
+	<script>
+	var captchaCode=String(document.frm1.captcha1.value);
+	var correctionLyrics=String(document.frm1.corrections1.value);
+	var correctCode="W68HP";
+	document.getElementById("lyricSubmit").onclick = function () {
+		if((captchaCode != correctCode) && (correctionLyrics!="")){
+			alert("Are you human? Please retype the characters.");
+			}
+		else if((captchaCode == correctCode) && (correctionLyrics=="")){
+			alert("Please type a lyric correction before submitting!");
+		}
+		else if((captchaCode != correctCode) && (correctionLyrics=="")){
+			alert("Please input something before submitting.");
+		}
+		else{
+			alert("Thanks for submitting a correction!");
+		}
+	}
+    </script>
+</body>
+</html>

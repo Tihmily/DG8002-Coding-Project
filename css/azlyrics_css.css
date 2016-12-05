@@ -1,9 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
-body{
+body, html{
 	padding:0;
 	margin:0;
+	height:100%;
+}
+body{
 	background-color:#E1E1E1;
+}
+#main_wrapper{
+	min-height:100%;
+	position:relative;
 }
 .menu{
 	width:100%;
@@ -96,22 +103,23 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-	border:2px solid #0066CC;
-	color:#0066CC;
-	font-size:0.6em;
+    border:2px solid #0066CC;
+    color:#0066CC;
+    font-size:0.6em;
 }
 
 .footer{
 	width:100%;
 	background-color:#f47321;
 	margin-top:60px;
-	position:relative;
+	position:absolute;
 	height:70px;
 	bottom:0;
 	left:0;
 	font-family:Montserrat, Arial, sans-serif;
 	font-size:1em;
 	color:#FFF;
+	clear:both;
 }
 .footer img{
 	float:left;
